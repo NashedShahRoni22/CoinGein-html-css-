@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Montserrat:wght@400;700&family=Rubik:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.header-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(88, 88, 88, 0.212);
+    
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.manu ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+
+}
+.manu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.right-side{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.coin-count{
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    border-radius: 40px;
+}
+.count-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 10px ;
+    border: 1px solid rgba(128, 128, 128, 0.521) ;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #2f2cd836 ;
+    font-size: 14px;
+}
+.count-right{
+    border: 1px solid rgba(128, 128, 128, 0.521) ;
+    padding: 8px 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.user i{
+    background-color: blue;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+}
+.user a{
+    text-decoration: none;
+    color: black;
+}
+.line{
+    margin-left: -48px;
+}
+
+/* welcome section  */
+.welcome-section{
+    margin: 0 16%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+}
+.welcome-content p{
+    font-size: 24px;
+    color: #7272A8;
+}
+.welcome-content h1{
+    font-size: 48px;
+    font-weight: 500;
+    color: #1f2c73;
+}
+.earn-section{
+    margin: 0 15%;
+}
+.earn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.earn img{
+    background-color: rgba(255, 255, 0, 0.274);
+    padding: 16px;
+    border-radius: 50%;
+}
+.earn h2{
+    color: #7272A8;
+    font-size: 18px;
+}
+.earn-card{
+    margin: 2% 15%;
+    display: flex;
+    gap: 16px;
+}
+.card-content{
+    height: 240px;
+    width: 270px;
+    border: 1px solid #48bcf9;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 12px;
+
+}
+.card-btn{
+    color: white;
+    padding: 10px 40px;
+    background-color: #48bcf9;
+    border-radius: 20px;
+}
+
+.task-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content:center ;
+    margin: 0 15% 5% 15%;
+    gap: 16px;
+}
+
+.task-one{
+    margin: 16px 0;
+    padding: 30px;
+    background-image: url(./svg/bonus_card_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+.task-two{
+    background-color: #D6D5FA;
+    margin: 32px 0;
+    padding: 30px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.task-two:hover{
+    background-image: url(./svg/bonus_card_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.task-two:hover .task-thumnail img,
+.task-two:hover .task-button button{
+    background-color: yellow;
+    color: #aeaed5;
+}
+.task-thumnail i{
+    padding: 16px;
+    background-color: #7bf8c5;
+    border-radius: 16px;
+    color: #F4F4Fd;
+    font-size: 24px;
+    margin: 16px 0;
+}
+.task-thumnail img{
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 16px 0;
+}
+.task-detail{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.task-content{
+    font-size: 14px;
+    color: #aeaed5;
+}
+.task-button button{
+    padding: 16px 0;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #7bf8c5;
+    color: #aeaed5;
+    min-width: 130px;
+    border: none;
+    cursor: pointer;
+}
+.task-two .task-button button{
+    padding: 16px 0;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #F4F4FD;
+    color: #1f2c73;
+    min-width: 130px;
+    border: none;
+    cursor: pointer;
+}
+.task-three{
+    padding: 64px 64px;
+    border-radius: 32px;
+    background-color: #fff;
+    box-shadow: 0 36px 48px rgb(31 66 135 / 4%);
+    color: #7272A8;
+}
+.task-three-title{
+    margin: 24px 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.circle{
+    background-color: #b9cfff;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+}
+
+.follow-us-content{
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.follow-earn{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.follow-btn button{
+    padding: 8px 24px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    background-color: #1f2c73;
+    font-weight: 300;
+}
+footer{
+    padding: 48px 0;
+}
+
+.footer-links{
+    margin: 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.business, .website{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    align-items: center;
+}
+.business a, .website a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #aeaed5;
+}
+.social-icon{
+    margin: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    font-size: 12px;
+    color: #aeaed5;
+}
+.social-icons ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.social-icon i{
+    padding: 16px;
+    background-color: white;
+    border-radius: 50%;
+    color: #aeaed5;
+    cursor: pointer;
+}
+
